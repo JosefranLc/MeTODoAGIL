@@ -84,7 +84,7 @@ def cadastro():
 
         return redirect(url_for("login"))
 
-    return render_template("Cadastro.html")
+    return render_template("cadastro.html")
 
 
 # =========================
