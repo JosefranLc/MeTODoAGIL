@@ -45,31 +45,8 @@
 </form>
 
 <div class="link">
-  Já tem conta? <a href="/">Faça login</a>
+  Já tem conta? <a href="{{ url_for('login') }}">Faça login</a>
 </div>
-
-<!--
-  <script>
-    document.getElementById('cadastroForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      const nome = document.getElementById('nome').value.trim();
-      const matricula = document.getElementById('matricula').value.trim();
-      const senha = document.getElementById('senha').value.trim();
-      
-      if (!nome || !matricula || !senha) {
-        alert('Preencha todos os campos!');
-        return;
-      }
-      
-      localStorage.setItem('alunoNome', nome);
-      localStorage.setItem('alunoMatricula', matricula);
-      localStorage.setItem('alunoSenha', senha); 
-      alert('Cadastro realizado! Agora faça login.');
-      window.location.href = 'index.html';
-    });
-  </script>
--->
 
 </body>
 </html>
