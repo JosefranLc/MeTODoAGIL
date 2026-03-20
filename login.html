@@ -44,26 +44,5 @@
   Não tem conta? <a href="{{ url_for('cadastro') }}">Cadastre-se</a>
 </div>
 
-  <!--
-  <script>
-    document.getElementById('loginForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      const matricula = document.getElementById('matricula').value.trim();
-      const senha = document.getElementById('senha').value.trim();
-      
-      const storedMat = localStorage.getItem('alunoMatricula');
-      const storedSenha = localStorage.getItem('alunoSenha');
-      
-      if (matricula === storedMat && senha === storedSenha) {
-        localStorage.setItem('logado', 'sim'); 
-        window.location.href = 'portal.html';
-      } else {
-        alert('Matrícula ou senha incorretos!');
-      }
-    });
-  </script>
--->
-
 </body>
 </html>
